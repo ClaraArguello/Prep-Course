@@ -35,11 +35,18 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  let fraseNueva = '';
   for(let i = 0; i < s.length; i++){
-    if(s[i] === s[i].toUpperCase){
-      
+    if(s[i] === s[i].toUpperCase()){
+      fraseNueva += s[i];
     }
   }
+  for(let j = 0; j < s.length; j++){
+    if(s[j] === s[j].toLowerCase()){
+      fraseNueva += s[j];
+    }
+  }
+  return fraseNueva;
 }
 
 
